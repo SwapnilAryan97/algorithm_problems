@@ -14,5 +14,6 @@ class Solution:
                 else:
                     k-=1
             if diff==0:
-                break
+                break 
+       
         return target-diff
