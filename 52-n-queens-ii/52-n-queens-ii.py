@@ -5,7 +5,7 @@ class Solution:
         negDiag = set() # (c-r)
         
         res = []
-        board = [['False']*n for i in range(n)]
+        board = [['']*n for i in range(n)]
         # print(board)
         def backtrack(r):
             if r==n:
