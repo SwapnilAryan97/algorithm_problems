@@ -2,7 +2,7 @@ class Solution:
     def convert(self, s: str, numRows: int) -> str:
         if numRows==1: return s
         res = ""
-        cycle = 2*numRows -2
+        cycle = 2*numRows - 2
         for i in range(0,numRows):
             j=i
             #for j in range(i,len(s),j+cycle):
