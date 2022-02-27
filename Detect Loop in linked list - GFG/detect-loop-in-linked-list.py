@@ -21,6 +21,16 @@ class Solution:
                 return True
         return False
         
+        temp = set()
+        node = head
+        while node:
+            if node not in temp:
+                temp.add(node)
+            else:
+                return True
+            node = node.next
+        return False
+        
 
 #{ 
 #  Driver Code Starts
