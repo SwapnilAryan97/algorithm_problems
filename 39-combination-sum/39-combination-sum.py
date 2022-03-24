@@ -9,5 +9,5 @@ class Solution:
                 for combo in dp[i-c]:
                     # print('combo=',combo)
                     dp[i].append(combo + [c])
-            print(dp)
+            # print(dp)
         return dp[-1]
