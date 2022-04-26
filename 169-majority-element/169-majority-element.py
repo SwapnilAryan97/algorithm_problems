@@ -1,9 +1,9 @@
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
         mem = {}
-        res = float('-inf')
         temp = 0
         n = len(nums)
+        res = n//2
         for num in nums:
             if num not in mem:
                 mem[num] = 1
