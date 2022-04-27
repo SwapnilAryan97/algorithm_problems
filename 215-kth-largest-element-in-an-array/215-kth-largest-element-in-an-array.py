@@ -1,5 +1,5 @@
 class Solution:
     def findKthLargest(self, nums: List[int], k: int) -> int:
-        nums = sorted(nums)
+        # nums = sorted(nums)
         # print(nums)
-        return nums[len(nums)-k]
+        return sorted(nums)[-k]
