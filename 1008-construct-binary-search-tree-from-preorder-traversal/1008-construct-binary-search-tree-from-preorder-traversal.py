@@ -21,10 +21,12 @@ class Solution:
                 node = node.left
             else:
                 temp = node
-                node = node.right
-                
+                node = node.right      
         
-        if val<=temp.val:temp.left = TreeNode(val)
-        else: temp.right = TreeNode(val)
+        
+        if val<=temp.val:
+            temp.left = TreeNode(val)
+        else:
+            temp.right = TreeNode(val)
         
         return node
