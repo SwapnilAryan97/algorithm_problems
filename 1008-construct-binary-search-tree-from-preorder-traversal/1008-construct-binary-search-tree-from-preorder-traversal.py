@@ -6,14 +6,15 @@
 #         self.right = right
 class Solution:
     def bstFromPreorder(self, preorder: List[int]) -> Optional[TreeNode]:
-        _list = preorder[1:]
+        # _list = preorder[1:]
         node = TreeNode(preorder[0])
-        for val in _list:
-            self.trav(node, val)
+        for val in preorder[1:]:
+            self.insert(node, val)
         return node
     
 
-    def trav(self, node, val):
+    def insert(self, node, val):
+        #When the while loop ends, temp is the leaf node
         temp = node
         while node: 
             if val<=node.val:
