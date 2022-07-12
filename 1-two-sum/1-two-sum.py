@@ -1,9 +1,7 @@
-class Solution:
+class Solution(dict):
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        dict = {}
-        for i in range(len(nums)):
-            if nums[i] not in dict:
-                dict[nums[i]] = i
-            temp = target-nums[i]
-            if temp in dict and dict[temp]!=i:
-                return [i, dict[target-nums[i]]]
+        dic = {}
+        for i, num in enumerate(nums):
+            if target-num in dic:
+                return (dic[target-num], i)
+            dic[num] = i
